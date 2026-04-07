@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm audit:*)",
+      "Bash(npm outdated:*)",
+      "Bash(echo \"---EXIT:$?---\")",
+      "Read(//tmp/**)",
+      "Bash(npm ls:*)",
+      "Bash(chmod +x /tmp/compare_packages.sh)",
+      "Bash(/tmp/compare_packages.sh)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "WebFetch(domain:localhost)",
+      "Bash(claude mcp:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_fill_form",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_network_requests",
+      "mcp__playwright__browser_console_messages",
+      "Bash(git init:*)",
+      "Bash(git remote:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
